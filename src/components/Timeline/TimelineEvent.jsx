@@ -1,68 +1,66 @@
-import React, { useState } from 'react';
+import React, { useCallback } from 'react';
+import { formatDate } from '../../locales';
 import './TimelineEvent.css';
 
-const TimelineEvent = ({ event, index, eraIndex, onClick }) => {
-  const [isHovered, setIsHovered] = useState(false);
+const TimelineEvent = React.memo(({ event, eventIndex, onEventClick, translations, language }) => {
+  const isEven = eventIndex % 2 === 0;
+  const isLeft = isEven;
 
-  const handleMouseEnter = () => setIsHovered(true);
-  const handleMouseLeave = () => setIsHovered(false);
+  // Otimizar o callback do clique
+  const handleClick = useCallback(() => {
+    onEventClick(event);
+  }, [onEventClick, event]);
 
   return (
-    <div
-      className="timeline-event-container"
-      style={{ 
-        animationDelay: `${(eraIndex * 0.2) + (index * 0.1)}s`,
-        marginLeft: index % 2 === 0 ? '0' : 'auto',
-        marginRight: index % 2 === 0 ? 'auto' : '0',
-        maxWidth: '45%'
-      }}
+    <div 
+      className={`timeline-event ${isLeft ? 'left' : 'right'} ${event.visual?.type || 'default'}`}
+      onClick={handleClick}
+      style={{ animationDelay: `${eventIndex * 0.05}s` }} // Reduzido de 0.1s para 0.05s
     >
-      <div
-        className={`timeline-event ${isHovered ? 'hovered' : ''}`}
-        onClick={onClick}
-        onMouseEnter={handleMouseEnter}
-        onMouseLeave={handleMouseLeave}
-      >
-        {/* Timeline Line */}
-        <div className="timeline-line">
-          <div className="timeline-dot"></div>
-        </div>
-
-        {/* Event Content */}
-        <div className="event-content">
-          <div className="event-header">
-            <h3 className="event-title">{event.title}</h3>
-            <div className="event-meta">
-              <span className="event-date">{event.date}</span>
-              <span className="event-location">{event.location}</span>
-            </div>
+      <div className="event-marker">
+        <div className="event-icon">{event.visual?.icon || '📅'}</div>
+        <div className="event-line"></div>
+      </div>
+      
+      <div className="event-card">
+        <div className="event-header">
+          <h3 className="event-title">{event.title}</h3>
+          <div className="event-meta">
+            <span className="event-date">{formatDate(event.date, language)}</span>
+            {event.location && (
+              <span className="event-location">• {event.location}</span>
+            )}
           </div>
-          
+        </div>
+        
+        <div className="event-content">
           <p className="event-description">{event.description}</p>
           
-          {event.characters && (
+          {event.characters && event.characters.length > 0 && (
             <div className="event-characters">
-              {event.characters.slice(0, 3).map((character, idx) => (
-                <span key={idx} className="character-tag">
-                  {character}
-                </span>
-              ))}
-              {event.characters.length > 3 && (
-                <span className="character-more">
-                  +{event.characters.length - 3}
-                </span>
-              )}
+              <span className="characters-label">{translations.ui.characters}:</span>
+              <div className="character-tags">
+                {event.characters.slice(0, 3).map((char, index) => (
+                  <span key={index} className="character-tag">{char}</span>
+                ))}
+                {event.characters.length > 3 && (
+                  <span className="character-more">+{event.characters.length - 3}</span>
+                )}
+              </div>
             </div>
           )}
-
-          {/* Hover Effect Overlay */}
-          <div className="event-overlay">
-            <span className="overlay-text">Clique para mais detalhes</span>
-          </div>
+        </div>
+        
+        <div className="event-footer">
+          <button className="read-more">
+            {translations.ui.readMore}
+          </button>
         </div>
       </div>
     </div>
   );
-};
+});
+
+TimelineEvent.displayName = 'TimelineEvent';
 
 export default TimelineEvent; 

@@ -1,0 +1,13 @@
+{
+  "header": {
+    "title": "DUNE",
+    "subtitle": "Uma jornada através dos milênios do universo de Frank Herbert",
+    "scrollHint": "Role para explorar a história"
+  },
+  "ui": {
+    "clickForDetails": "Clique para mais detalhes",
+    "characters": "Personagens Principais:",
+    "impact": "Impacto:",
+    "close": "Fechar"
+  }
+} 

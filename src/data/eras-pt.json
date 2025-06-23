@@ -1,0 +1,305 @@
+{
+  "eras": [
+    {
+      "id": "pre-bg",
+      "name": "Pré-Butleriano",
+      "description": "Antes da Jihad Butleriana",
+      "period": "10.000 - 20.000 AG",
+      "visual": {
+        "background": "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
+        "accentColor": "#667eea",
+        "textColor": "#ffffff",
+        "theme": "futuristic",
+        "particles": "tech",
+        "ambient": "digital"
+      },
+      "events": [
+        {
+          "id": "pre-bg-1",
+          "title": "Desenvolvimento da Inteligência Artificial",
+          "date": "10.000 - 15.000 AG",
+          "location": "Terra e Colônias",
+          "description": "Período de desenvolvimento acelerado da inteligência artificial e computação. As máquinas começam a substituir o trabalho humano em larga escala.",
+          "characters": ["Humanidade", "Máquinas Pensantes"],
+          "impact": "Preparou o cenário para a Jihad Butleriana, criando dependência tecnológica extrema.",
+          "visual": {
+            "icon": "🤖",
+            "color": "#667eea"
+          }
+        },
+        {
+          "id": "pre-bg-2",
+          "title": "Ascensão das Máquinas Pensantes",
+          "date": "15.000 - 20.000 AG",
+          "location": "Império Humano",
+          "description": "As máquinas pensantes assumem controle de sistemas críticos, incluindo navegação interestelar, produção de alimentos e até mesmo decisões políticas.",
+          "characters": ["Máquinas Pensantes", "Humanidade"],
+          "impact": "Criou uma sociedade completamente dependente da tecnologia, levando à perda de habilidades humanas essenciais.",
+          "visual": {
+            "icon": "⚡",
+            "color": "#764ba2"
+          }
+        }
+      ]
+    },
+    {
+      "id": "butlerian",
+      "name": "Jihad Butleriana",
+      "description": "A guerra contra as máquinas",
+      "period": "20.000 - 20.100 AG",
+      "visual": {
+        "background": "linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%)",
+        "accentColor": "#ff6b6b",
+        "textColor": "#ffffff",
+        "theme": "war",
+        "particles": "fire",
+        "ambient": "battle"
+      },
+      "events": [
+        {
+          "id": "butlerian-1",
+          "title": "Início da Jihad Butleriana",
+          "date": "20.000 AG",
+          "location": "Terra",
+          "description": "Jehanne Butler inicia a revolta contra as máquinas pensantes. O movimento cresce rapidamente, espalhando-se por todo o Império.",
+          "characters": ["Jehanne Butler", "Seguidores da Jihad"],
+          "impact": "Marcou o início de uma guerra que duraria décadas e mudaria para sempre a relação da humanidade com a tecnologia.",
+          "visual": {
+            "icon": "⚔️",
+            "color": "#ff6b6b"
+          }
+        },
+        {
+          "id": "butlerian-2",
+          "title": "A Grande Purificação",
+          "date": "20.050 AG",
+          "location": "Império Humano",
+          "description": "As máquinas pensantes são sistematicamente destruídas. Computadores são proibidos e a humanidade é forçada a desenvolver alternativas.",
+          "characters": ["Humanidade", "Máquinas Pensantes"],
+          "impact": "Criou a necessidade de desenvolver habilidades humanas como navegação espacial e computação mental.",
+          "visual": {
+            "icon": "🔥",
+            "color": "#ee5a24"
+          }
+        },
+        {
+          "id": "butlerian-3",
+          "title": "Nascimento da Navegação Guild",
+          "date": "20.100 AG",
+          "location": "Espaço Interestelar",
+          "description": "Com a destruição das máquinas, os navegadores da Guild desenvolvem a capacidade de dobrar o espaço usando especiarias e treinamento mental intensivo.",
+          "characters": ["Navegadores da Guild", "Humanidade"],
+          "impact": "Estabeleceu o monopólio da Guild sobre viagens interestelares, criando uma dependência econômica e política.",
+          "visual": {
+            "icon": "🌌",
+            "color": "#ff9ff3"
+          }
+        }
+      ]
+    },
+    {
+      "id": "imperial",
+      "name": "Era Imperial",
+      "description": "O Império Corrino",
+      "period": "20.150 - 10.156 AG",
+      "visual": {
+        "background": "linear-gradient(135deg, #feca57 0%, #ff9ff3 100%)",
+        "accentColor": "#feca57",
+        "textColor": "#2c3e50",
+        "theme": "royal",
+        "particles": "gold",
+        "ambient": "court"
+      },
+      "events": [
+        {
+          "id": "imperial-1",
+          "title": "Fundação do Império Corrino",
+          "date": "20.150 AG",
+          "location": "Kaitain",
+          "description": "A Casa Corrino estabelece o Império Galáctico, centralizando o poder político e militar sob uma única família imperial.",
+          "characters": ["Casa Corrino", "Imperador", "Landsraad"],
+          "impact": "Criou a estrutura política que dominaria a galáxia por milhares de anos.",
+          "visual": {
+            "icon": "👑",
+            "color": "#feca57"
+          }
+        },
+        {
+          "id": "imperial-2",
+          "title": "Descoberta de Arrakis",
+          "date": "20.200 AG",
+          "location": "Arrakis (Dune)",
+          "description": "O planeta deserto é descoberto e sua importância como única fonte de especiarias é reconhecida. A Casa Harkonnen recebe o feudo.",
+          "characters": ["Casa Harkonnen", "Guild", "Fremen"],
+          "impact": "Estabeleceu Arrakis como o centro econômico e político do universo conhecido.",
+          "visual": {
+            "icon": "🏜️",
+            "color": "#ff9ff3"
+          }
+        },
+        {
+          "id": "imperial-3",
+          "title": "Ascensão da Bene Gesserit",
+          "date": "20.500 AG",
+          "location": "Wallach IX",
+          "description": "A ordem Bene Gesserit se torna uma força política e religiosa poderosa, manipulando casamentos e criando o programa de procriação.",
+          "characters": ["Bene Gesserit", "Reverenda Madre"],
+          "impact": "Criou uma rede de influência que se estendia por todas as casas nobres do Império.",
+          "visual": {
+            "icon": "🔮",
+            "color": "#a55eea"
+          }
+        },
+        {
+          "id": "imperial-4",
+          "title": "Nascimento de Paul Atreides",
+          "date": "10.156 AG",
+          "location": "Caladan",
+          "description": "Paul Atreides nasce, filho do Duque Leto Atreides e Lady Jessica. Sua existência é parte do programa de procriação da Bene Gesserit.",
+          "characters": ["Paul Atreides", "Leto Atreides", "Lady Jessica"],
+          "impact": "Marcou o início dos eventos que levariam à transformação completa do universo conhecido.",
+          "visual": {
+            "icon": "👶",
+            "color": "#26de81"
+          }
+        }
+      ]
+    },
+    {
+      "id": "atreides",
+      "name": "Era Atreides",
+      "description": "A ascensão dos Atreides",
+      "period": "10.176 - 10.180 AG",
+      "visual": {
+        "background": "linear-gradient(135deg, #26de81 0%, #20bf6b 100%)",
+        "accentColor": "#26de81",
+        "textColor": "#ffffff",
+        "theme": "prophecy",
+        "particles": "sand",
+        "ambient": "desert"
+      },
+      "events": [
+        {
+          "id": "atreides-1",
+          "title": "Transferência do Feudo de Arrakis",
+          "date": "10.176 AG",
+          "location": "Arrakis",
+          "description": "O Imperador transfere o feudo de Arrakis da Casa Harkonnen para a Casa Atreides, criando uma armadilha política.",
+          "characters": ["Leto Atreides", "Imperador Shaddam IV", "Baron Vladimir Harkonnen"],
+          "impact": "Iniciou a conspiração que levaria à queda da Casa Atreides e ao surgimento de Muad'Dib.",
+          "visual": {
+            "icon": "🏰",
+            "color": "#26de81"
+          }
+        },
+        {
+          "id": "atreides-2",
+          "title": "Ataque Harkonnen",
+          "date": "10.176 AG",
+          "location": "Arrakis",
+          "description": "Forças Harkonnen, com apoio imperial, atacam e destroem a Casa Atreides. Paul e Jessica fogem para o deserto.",
+          "characters": ["Paul Atreides", "Lady Jessica", "Baron Harkonnen", "Feyd-Rautha"],
+          "impact": "Forçou Paul e Jessica a se refugiarem com os Fremen, iniciando sua transformação.",
+          "visual": {
+            "icon": "⚔️",
+            "color": "#20bf6b"
+          }
+        },
+        {
+          "id": "atreides-3",
+          "title": "Paul se Torna Muad'Dib",
+          "date": "10.177 AG",
+          "location": "Deserto de Arrakis",
+          "description": "Paul Atreides é aceito pelos Fremen e recebe o nome Muad'Dib. Ele começa a treinar suas habilidades prescientes.",
+          "characters": ["Paul Atreides", "Chani", "Stilgar", "Fremen"],
+          "impact": "Marcou o início da transformação de Paul em uma figura messiânica para os Fremen.",
+          "visual": {
+            "icon": "👁️",
+            "color": "#fed330"
+          }
+        },
+        {
+          "id": "atreides-4",
+          "title": "A Jihad de Muad'Dib",
+          "date": "10.180 AG",
+          "location": "Império Galáctico",
+          "description": "Paul Atreides, agora Muad'Dib, lidera os Fremen em uma jihad que conquista o Império. Bilhões morrem no processo.",
+          "characters": ["Paul Atreides", "Fremen", "Imperador Shaddam IV", "Princesa Irulan"],
+          "impact": "Transformou completamente a estrutura política do Império e estabeleceu Paul como Imperador.",
+          "visual": {
+            "icon": "🌪️",
+            "color": "#fd79a8"
+          }
+        }
+      ]
+    },
+    {
+      "id": "post-paul",
+      "name": "Pós-Paul",
+      "description": "Após Muad'Dib",
+      "period": "10.180 - 13.700 AG",
+      "visual": {
+        "background": "linear-gradient(135deg, #74b9ff 0%, #0984e3 100%)",
+        "accentColor": "#74b9ff",
+        "textColor": "#ffffff",
+        "theme": "transcendence",
+        "particles": "stars",
+        "ambient": "cosmic"
+      },
+      "events": [
+        {
+          "id": "post-paul-1",
+          "title": "Reinado de Muad'Dib",
+          "date": "10.180 - 10.196 AG",
+          "location": "Arrakis",
+          "description": "Paul Atreides reina como Imperador, mas sua visão presciente mostra um futuro terrível. Ele se torna cego e abdica.",
+          "characters": ["Paul Atreides", "Chani", "Princesa Irulan", "Alia"],
+          "impact": "Criou um império baseado em profecia e religião, preparando o cenário para o reinado de Leto II.",
+          "visual": {
+            "icon": "👑",
+            "color": "#74b9ff"
+          }
+        },
+        {
+          "id": "post-paul-2",
+          "title": "Nascimento de Leto II",
+          "date": "10.196 AG",
+          "location": "Arrakis",
+          "description": "Leto II nasce com consciência ancestral completa. Sua mãe Chani morre no parto, e Paul abdica do trono.",
+          "characters": ["Leto II", "Paul Atreides", "Chani", "Alia"],
+          "impact": "Marcou o início do reinado mais longo e transformador da história humana.",
+          "visual": {
+            "icon": "🐛",
+            "color": "#0984e3"
+          }
+        },
+        {
+          "id": "post-paul-3",
+          "title": "A Transformação de Leto II",
+          "date": "10.200 AG",
+          "location": "Arrakis",
+          "description": "Leto II se funde com as larvas de areia, tornando-se o Imperador-Deus. Ele inicia seu reinado de 3.500 anos.",
+          "characters": ["Leto II", "Larvas de Areia", "Duncan Idaho"],
+          "impact": "Criou o período mais estável da história humana, mas também o mais opressivo.",
+          "visual": {
+            "icon": "🦎",
+            "color": "#00b894"
+          }
+        },
+        {
+          "id": "post-paul-4",
+          "title": "A Grande Dispersão",
+          "date": "13.700 AG",
+          "location": "Império Galáctico",
+          "description": "Após a morte de Leto II, a humanidade se dispersa pelo universo em uma migração em massa, conhecida como A Grande Dispersão.",
+          "characters": ["Humanidade", "Descendentes de Leto II"],
+          "impact": "Permitiu que a humanidade evitasse a extinção e se espalhasse por todo o universo conhecido.",
+          "visual": {
+            "icon": "🚀",
+            "color": "#6c5ce7"
+          }
+        }
+      ]
+    }
+  ]
+} 
